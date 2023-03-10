@@ -16,7 +16,7 @@
 #[IF]  $gpslatitude $gpslongitude
 #[BODY]<trkpt lat="$gpslatitude#" lon="$gpslongitude#">
 #[BODY]  <ele>$gpsaltitude#</ele>
-#[BODY]  <time>${gpsdatetime#;my ($ss)=/\.\d+/g;DateFmt("%Y-%m-%dT%H:%M:%SZ");s/Z/${ss}Z/ if $ss}</time>
+#[BODY]  <time>${gpsdatetime#;my ($ss)=/\.\d+/g;DateFmt("%Y-%m-%dT%H:%M:%S+04");s/Z/${ss}Z/ if $ss}</time>
 #[BODY]</trkpt>
 #[TAIL]</trkseg>
 #[TAIL]</trk>
