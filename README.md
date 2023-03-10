@@ -1,5 +1,7 @@
 # exiftool-insta360-gpx
 
+Generate .gpx file having Insta360 video (.insv)
+
 Capturing 360 video with the [Insta360 ONE RS 1' 360 edition](https://www.insta360.com/product/insta360-oners/1inch-360) and then upload to Google Street View (in Google Street View Studio). Steps:
 
 1) Capture the 360 video (in this case using the [Insta360 GPS Action Remote](https://store.insta360.com/product/gps-action-remote?c=2156))
