@@ -11,3 +11,11 @@ Capturing 360 video with the [Insta360 ONE RS 1' 360 edition](https://www.insta3
 5) Go to [Google Street View Studio](https://streetviewstudio.maps.google.com/) and upload the .mp4 & .gpx files.
 6) Wait...
 
+
+![check-gps-data-in-video](images/check-gps-data-in-video.png)
+
+![enable-direction-lock](images/enable-direction-lock.png)
+
+![export-video360-as-h265](images/export-video360-as-h265.png)
+
+![bash-warning-truncate](images/bash-warning-truncate.png)
