@@ -12,10 +12,14 @@ Capturing 360 video with the [Insta360 ONE RS 1' 360 edition](https://www.insta3
 6) Wait...
 
 
+Check GPS data in the 360 video:
 ![check-gps-data-in-video](images/check-gps-data-in-video.png)
 
+Enable `Direction Lock`:
 ![enable-direction-lock](images/enable-direction-lock.png)
 
+Export as .mp4:
 ![export-video360-as-h265](images/export-video360-as-h265.png)
 
+Create .gpx file (warning shows up):
 ![bash-warning-truncate](images/bash-warning-truncate.png)
