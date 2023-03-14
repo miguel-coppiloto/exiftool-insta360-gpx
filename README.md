@@ -11,6 +11,27 @@ Capturing 360 video with the [Insta360 ONE RS 1' 360 edition](https://www.insta3
 5) Go to [Google Street View Studio](https://streetviewstudio.maps.google.com/) and upload the .mp4 & .gpx files.
 6) Wait...
 
+## gpx.fmt file
+
+[/gpx.fmt](/gpx.fmt) file (modify as you needed)
+
+```diff
+#[HEAD]<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" creator="Oregon 400t" version="1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensionsv3.xsd http://www.garmin.com/xmlschemas/TrackPointExtension/v1 http://www.garmin.com/xmlschemas/TrackPointExtensionv1.xsd">
+#[HEAD]<trk>
+#[HEAD]<trkseg>
+#[IF]  $gpslatitude $gpslongitude
+#[BODY]<trkpt lat="$gpslatitude#" lon="$gpslongitude#">
+#[BODY]  <ele>$gpsaltitude#</ele>
+-#[BODY]  <time>${gpsdatetime#;my ($ss)=/\.\d+/g;DateFmt("%Y-%m-%dT%H:%M:%SZ");s/Z/${ss}Z/ if $ss}</time>
++#[BODY]  <time>${gpsdatetime#;my ($ss)=/\.\d+/g;DateFmt("%Y-%m-%dT%H:%M:%S+04");s/Z/${ss}Z/ if $ss}</time>
+#[BODY]</trkpt>
+#[TAIL]</trkseg>
+#[TAIL]</trk>
+#[TAIL]</gpx>
+```
+
+
+## Pictures
 
 Check GPS data in the 360 video:
 ![check-gps-data-in-video](images/check-gps-data-in-video.png)
