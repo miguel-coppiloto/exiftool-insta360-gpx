@@ -44,3 +44,8 @@ Export as .mp4:
 
 Create .gpx file (warning shows up):
 ![bash-warning-truncate](images/bash-warning-truncate.png)
+
+
+Google Street View Studio upload file (time range warning)
+![google-street-view-upload-video-01](images/google-street-view-upload-video-01.png)
+![google-street-view-upload-video-01](images/google-street-view-upload-video-02.png)
