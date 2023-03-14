@@ -33,6 +33,8 @@ Capturing 360 video with the [Insta360 ONE RS 1' 360 edition](https://www.insta3
 
 ## Pictures
 
+### Insta360 ONE RS 1' 360 edition (in Insta360 Studio)
+
 Check GPS data in the 360 video:
 ![check-gps-data-in-video](images/check-gps-data-in-video.png)
 
@@ -42,6 +44,12 @@ Enable `Direction Lock`:
 Export as .mp4:
 ![export-video360-as-h265](images/export-video360-as-h265.png)
 
+### GoPro MAX (in GoPro Player)
+
+Export as .mp4
+![gopro-export-01](images/gopro-export-01.png)
+![gopro-export-02](images/gopro-export-02.png)
+
 Create .gpx file (warning shows up):
 ![bash-warning-truncate](images/bash-warning-truncate.png)
 
@@ -49,3 +57,12 @@ Create .gpx file (warning shows up):
 Google Street View Studio upload file (time range warning)
 ![google-street-view-upload-video-01](images/google-street-view-upload-video-01.png)
 ![google-street-view-upload-video-01](images/google-street-view-upload-video-02.png)
+
+
+
+
+
+
+
+
+
