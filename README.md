@@ -36,6 +36,7 @@ Capturing 360 video with the [Insta360 ONE RS 1' 360 edition](https://www.insta3
 ### Insta360 ONE RS 1' 360 edition (in Insta360 Studio)
 Before run the `exiftool` command, make sure to reference the right file (the file with the name `VID_<YYYYMMDD>_<HHMMSS>_00_<NN>.insv`):
 ![right-file-to-get-gps-info](images/right-file-to-get-gps-info.png)
+### Insta360 ONE RS 1' 360 edition (in Insta360 Studio)
 
 Check GPS data in the 360 video:
 ![check-gps-data-in-video](images/check-gps-data-in-video.png)
@@ -61,6 +62,11 @@ Check .gpx file (ie: [gpx.studio](https://gpx.studio))
 Google Street View Studio upload file (time range warning)
 ![google-street-view-upload-video-01](images/google-street-view-upload-video-01.png)
 ![google-street-view-upload-video-01](images/google-street-view-upload-video-02.png)
+
+
+
+
+
 
 
 
