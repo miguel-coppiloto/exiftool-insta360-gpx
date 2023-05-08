@@ -23,13 +23,14 @@ Capturing 360 video with the [Insta360 ONE RS 1' 360 edition](https://www.insta3
 #[BODY]<trkpt lat="$gpslatitude#" lon="$gpslongitude#">
 #[BODY]  <ele>$gpsaltitude#</ele>
 -#[BODY]  <time>${gpsdatetime#;my ($ss)=/\.\d+/g;DateFmt("%Y-%m-%dT%H:%M:%SZ");s/Z/${ss}Z/ if $ss}</time>
-+#[BODY]  <time>${gpsdatetime#;my ($ss)=/\.\d+/g;DateFmt("%Y-%m-%dT%H:%M:%S+04");s/Z/${ss}Z/ if $ss}</time>
++#[BODY]  <time>${gpsdatetime#;my ($ss)=/\.\d+/g;DateFmt("%Y-%m-%dT%H:%M:%SZ");s/Z/${ss}Z/ if $ss; ShiftTime("-8:2:0"); }</time>
 #[BODY]</trkpt>
 #[TAIL]</trkseg>
 #[TAIL]</trk>
 #[TAIL]</gpx>
 ```
 
+In this case I'm changing the time subtracting 8 hours and adding 2 minutes with the function [ShiftTime](https://exiftool.org/Shift.html).
 
 ## Pictures
 
@@ -47,12 +48,6 @@ Enable `Direction Lock`:
 Export as .mp4:
 ![export-video360-as-h265](images/export-video360-as-h265.png)
 
-### GoPro MAX (in GoPro Player)
-
-Export as .mp4
-![gopro-export-01](images/gopro-export-01.png)
-![gopro-export-02](images/gopro-export-02.png)
-
 Create .gpx file (warning shows up):
 ![some-warnings](images/some-warnings.png)
 
@@ -64,6 +59,14 @@ Google Street View Studio upload file (time range warning)
 ![google-street-view-upload-video-01](images/google-street-view-upload-video-02.png)
 
 
+---
+## GoPro MAX (in GoPro Player)
+
+With the GoPro MAX camera is way more easy. In the GoPro Player app export the mp4 and this file has the GPS info inside (no need to upload a GPX separate file).
+
+Export as .mp4
+![gopro-export-01](images/gopro-export-01.png)
+![gopro-export-02](images/gopro-export-02.png)
 
 
 
